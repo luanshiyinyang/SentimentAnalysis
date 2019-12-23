@@ -1,0 +1,2 @@
+下载trec06p数据集到该目录下并解压。
+please download trec06p dataset and extract here.

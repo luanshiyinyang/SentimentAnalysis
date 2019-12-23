@@ -1,0 +1,13 @@
+*.rar
+*.zip
+*.tgz
+
+__pycache__/
+.idea/
+trec*/
+*.pkl
+ham.txt
+spam.txt
+vocab.txt
+*.npz
+*.bin
