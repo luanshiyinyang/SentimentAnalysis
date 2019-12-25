@@ -1,7 +1,7 @@
 """
 Author: Zhou Chen
 Date: 2019/12/22
-Desc: trec06c数据集处理模块
+Desc: 数据集处理模块
 1.文本数据统一转化为utf8格式编码
 2.删除超链接邮箱账号等无用信息
 3.对标点等进行分词
@@ -22,21 +22,24 @@ def load_stop_words():
     return stop_words
 
 
-def match_word2vec(model_used, sentence, stop_list):
+def match_word2vec(model, sentence, stop_list):
     """
     为每个句子生成词向量，求和平均法得到的应该是300维向量
     """
     result = np.zeros(300)
     num = 0
     for word in sentence.split(" "):
-        num += 1
+
         try:
             if word in stop_list:
                 result += np.zeros(300)
             else:
-                result += model_used[word]
+                result += model[word]
+                num += 1
         except:
             result += np.zeros(300)
+    if num == 0:
+        num = 1.0
     return result / num
 
 

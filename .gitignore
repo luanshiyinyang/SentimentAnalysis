@@ -1,13 +1,10 @@
 *.rar
 *.zip
 *.tgz
+*.pkl
+*.npz
+*.bin
 
 __pycache__/
 .idea/
-trec*/
-*.pkl
-ham.txt
-spam.txt
-vocab.txt
-*.npz
-*.bin
+IMDB/

@@ -7,7 +7,7 @@ Desc: 加载特征向量化的数据，用于模型的训练
 import numpy as np
 
 
-class RTPolarity(object):
+class IMDB(object):
 
     def __init__(self):
         data = np.load("../data/data.npz")
@@ -18,5 +18,5 @@ class RTPolarity(object):
 
 
 if __name__ == '__main__':
-    x, y = RTPolarity().load_data()
+    x, y = IMDB().load_data()
     print(x.shape, y.shape)

@@ -1,2 +1,3 @@
-下载trec06p数据集到该目录下并解压。
+周晨 写于2019-21-25
+下载imdb数据集到该目录下并解压，该数据集应该是正样本汇总的txt文件和负样本汇总的txt文件。
 please download trec06p dataset and extract here.
